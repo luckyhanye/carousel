@@ -1,0 +1,68 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.showPic{
+  width: 100vw;
+  height:100vh;
+  overflow:hidden;
+  position:relative;
+}
+.showPic ul{
+  position:relative;
+  /*left:-100%;*/
+  /*left:-100%;     /* 变量 第N张图片-100%*N   */
+  list-style: none;
+  /*width: 400%;    /* 变量  一张图片是100%，N张是100%*N  */
+  height:100vh;
+}
+.showPic li{
+  float:left;
+  /*width: 25%;    /* 变量  100/n张图片   */
+  height:100vh;
+  /*background-image: url("../images/pic-1.jpg");   /* 变量  图片路径不同  */
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  background-position: 50% 50%;
+}
+.showPic .btn{
+  position:absolute;
+  top:50vh;
+  width: 30px;
+  line-height: 50px;
+  color:teal;
+  background-color: #ccc;
+  text-align: center;
+  border-radius: 10px;
+}
+.showPic .btn:hover{
+  cursor:pointer;
+  background-color: pink;
+}
+.showPic .left{
+  left:0;
+}
+.showPic .right{
+  right:0;
+}
+.newBtn{
+  position:absolute;
+  width:100%;
+  bottom:20px;
+  text-align: center;
+}
+.newBtn span{
+  display:inline-block;   /* 行级块元素*/
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: blue;
+  margin-left: 10px;
+}
+.newBtn span:hover{
+  cursor:pointer;
+  background-color:red;
+}
